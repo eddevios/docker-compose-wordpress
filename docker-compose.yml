@@ -1,0 +1,51 @@
+services:
+  db:
+    image: mariadb:10.5
+    container_name: custom_maria_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: db_eddevios
+      MYSQL_USER: eddevios
+      MYSQL_PASSWORD: 123456
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - db_network
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: custom_db
+    environment:
+      PMA_HOST: db
+      PMA_USER: eddevios
+      PMA_PASSWORD: 123456
+    ports:
+      - "8082:80"
+    networks:
+      - db_network
+    restart: always
+
+  wordpress:
+    image: wordpress:latest
+    container_name: custom_wordpress
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: db_eddevios
+      WORDPRESS_DB_USER: eddevios
+      WORDPRESS_DB_PASSWORD: 123456
+    volumes:
+      - wordpress_data:/var/www/html  # Volumen explícito para los archivos de WordPress
+    ports:
+      - "8083:80"
+    networks:
+      - db_network
+    restart: always
+
+networks:
+  db_network:
+    driver: bridge
+
+volumes:
+  db_data:
+  wordpress_data:
