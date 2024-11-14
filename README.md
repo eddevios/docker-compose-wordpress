@@ -21,7 +21,7 @@ Asegúrate de tener instalado:
 1. **Clona este repositorio**:
    ```bash
    git clone https://github.com/tu-usuario/docker-compose-wordpress.git
-   cd ocker-compose-wordpress
+   cd docker-compose-wordpress
 2. **Ejecuta Docker Compose: En la carpeta del repositorio, ejecuta:
    ```bash
    docker-compose up -d
