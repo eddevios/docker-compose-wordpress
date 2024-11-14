@@ -22,11 +22,9 @@ Asegúrate de tener instalado:
    ```bash
    git clone https://github.com/tu-usuario/docker-compose-wordpress.git
    cd ocker-compose-wordpress
-2. Ejecuta Docker Compose: En la carpeta del repositorio, ejecuta:
-
-bash
-Copiar código
-docker-compose up -d
+2. **Ejecuta Docker Compose: En la carpeta del repositorio, ejecuta:
+   ```bash
+   docker-compose up -d
 Este comando descargará las imágenes necesarias (si no están descargadas) y iniciará los contenedores en modo desacoplado.
 
 ## Servicios y puertos
@@ -57,11 +55,9 @@ Esta configuración incluye volúmenes para persistir datos:
 
 ## Deteniendo los contenedores
 
-Para detener los contenedores, ejecuta:
-
-bash
-Copiar código
-docker-compose down
+## Para detener los contenedores, ejecuta:
+    ```bash
+    docker-compose down
 
 ## Resolución de problemas
 
