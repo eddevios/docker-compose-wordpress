@@ -1,5 +1,3 @@
-¡Claro! Aquí te dejo un ejemplo de README.md en español, basado en el ejemplo que me proporcionaste:
-
 # Configuración de Docker para WordPress con MariaDB y PhpMyAdmin
 
 Este repositorio contiene un archivo `docker-compose.yml` para configurar un entorno de desarrollo de WordPress con MariaDB como servidor de base de datos y PhpMyAdmin para la gestión de la base de datos.
@@ -7,12 +5,9 @@ Este repositorio contiene un archivo `docker-compose.yml` para configurar un ent
 ## Descripción
 
 Esta configuración incluye:
-
 * **MariaDB**: como servidor de base de datos.
 * **PhpMyAdmin**: para gestionar la base de datos de MariaDB a través de una interfaz web.
 * **WordPress**: como aplicación principal.
-
-## Comenzando
 
 ### Requisitos previos
 
