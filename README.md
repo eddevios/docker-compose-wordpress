@@ -55,17 +55,6 @@ Esta configuración incluye volúmenes para persistir datos:
 
 ## Deteniendo los contenedores
 
-## Para detener los contenedores, ejecuta:
-    ```bash
-    docker-compose down
-
-## Resolución de problemas
-
-* **Errores de conexión a la base de datos**: asegúrate de que las variables de entorno `PMA_HOST`, `WORDPRESS_DB_HOST` y otras en `docker-compose.yml` estén configuradas correctamente.
-* **Conflictos de puertos**: cambia los mapeos de puertos en `docker-compose.yml` si estos puertos ya están en uso.
-
-## Licencia
-
-Este proyecto está licenciado bajo la Licencia GNU General Public License v3.0.
-
-Espero que esto te sea útil. Recuerda reemplazar "tu-usuario" con tu nombre de usuario de GitHub en la URL del repositorio.
+## Para detener los contenedores, ejecuta:   
+   ```bash
+   docker-compose down
