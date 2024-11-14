@@ -70,6 +70,6 @@ docker-compose down
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT.
+Este proyecto está licenciado bajo la Licencia GNU General Public License v3.0.
 
 Espero que esto te sea útil. Recuerda reemplazar "tu-usuario" con tu nombre de usuario de GitHub en la URL del repositorio.
